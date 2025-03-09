@@ -13,6 +13,25 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes',
+      htmlAttrs: {
+        lang: 'fa',
+        dir: 'rtl',
+      },
+      title: 'LastSecond',
+      meta: [
+        { name: 'theme-color', content: '#000000' },
+        {
+          name: 'description',
+          content: 'LastSecond',
+        },
+      ],
+    },
+  },
+
   css: ['~/assets/css/main.css'],
 
   future: {
