@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+
+  --font-dana: "Dana";
+
   --breakpoint-3xl: 120rem;
 
   /* -- gray-blue -- */

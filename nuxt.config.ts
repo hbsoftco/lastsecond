@@ -13,7 +13,17 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'nuxt-headlessui',
     '@nuxt/image',
+    '@nuxt/fonts',
   ],
+
+  fonts: {
+    families: [
+      {
+        name: 'Dana',
+        weights: ['400', '700', '900', '300', '500'],
+      },
+    ],
+  },
 
   css: ['~/assets/css/main.css'],
 
