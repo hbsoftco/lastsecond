@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/fonts',
     '@nuxt/eslint',
+    '@nuxt/icon',
   ],
 
   devtools: { enabled: true },
@@ -43,5 +44,9 @@ export default defineNuxtConfig({
         weights: ['400', '700', '900', '300', '500'],
       },
     ],
+  },
+
+  headlessui: {
+    prefix: 'Headless',
   },
 });
