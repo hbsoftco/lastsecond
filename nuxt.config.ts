@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: [],
+  modules: ['@nuxtjs/color-mode'],
 
   css: ['~/assets/css/main.css'],
 
