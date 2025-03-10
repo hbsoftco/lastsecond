@@ -68,4 +68,13 @@ export default defineNuxtConfig({
   headlessui: {
     prefix: 'Headless',
   },
+
+  image: {
+    quality: 80,
+    format: ['webp'],
+    provider: 'ipx',
+    ipx: {
+      maxAge: 60 * 60 * 24 * 365,
+    },
+  },
 });
