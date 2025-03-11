@@ -21,7 +21,8 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
-      "esbuild"
+      "esbuild",
+      "sharp"
     ]
   },
   "devDependencies": {
