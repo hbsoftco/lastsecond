@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/eslint',
     '@nuxt/icon',
+    '@nuxtjs/i18n',
   ],
 
   devtools: { enabled: true },
@@ -67,6 +68,10 @@ export default defineNuxtConfig({
 
   headlessui: {
     prefix: 'Headless',
+  },
+
+  i18n: {
+    vueI18n: '~/i18n/i18n.config.ts',
   },
 
   image: {
