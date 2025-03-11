@@ -1,5 +1,12 @@
 {
   "common": {
-    
+    "priceStartsFrom": "شروع قیمت از",
+    "tour": "تور"
+
+  },
+  "currencies": {
+    "irr": "ریال",
+    "irt": "تومان",
+    "usd": "دلار"
   }
 }
