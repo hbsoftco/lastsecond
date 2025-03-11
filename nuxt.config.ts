@@ -72,6 +72,7 @@ export default defineNuxtConfig({
   image: {
     quality: 80,
     format: ['webp'],
+    domains: ['last-cdn.com'],
     provider: 'ipx',
     ipx: {
       maxAge: 60 * 60 * 24 * 365,
