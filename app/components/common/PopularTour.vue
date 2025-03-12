@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="link"
-    class="relative rounded-xl overflow-hidden w-60 h-60"
+    class="relative rounded-xl w-60 h-60 shadow"
   >
     <div class="w-60 h-60">
       <NuxtImg
@@ -13,11 +13,11 @@
         format="webp"
         loading="lazy"
         :modifiers="{ w: width, h: height }"
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover rounded-xl"
       />
     </div>
     <div
-      class="absolute bottom-0 p-3 flex items-end w-full h-40 bg-linear-to-t from-gray-blue-1000 from-10% to-transparent to-90%"
+      class="absolute rounded-b-xl bottom-0 p-3 flex items-end w-full h-40 bg-linear-to-t from-gray-blue-1000 from-10% to-transparent to-90%"
     >
       <div>
         <h5 class="font-black text-2xl text-gray-blue-100 mb-2">
@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="absolute top-0.5 right-1">
-      <span class="bg-gray-blue-50 text-xs font-medium rounded text-gray-blue-1000 px-1.5 py-0.5 shadow rounded-tr-xl">
+      <span class="bg-gray-blue-50 opacity-80 text-xs font-medium rounded text-gray-blue-1000 pr-1.5 pl-2.5 py-0.5 shadow rounded-tr-xl rounded-bl-xl">
         {{ tourCount }} {{ $t('common.tour') }}
       </span>
     </div>
