@@ -23,12 +23,12 @@ export default defineNuxtConfig({
         lang: 'fa',
         dir: 'rtl',
       },
-      title: 'LastSecond',
+      title: 'انتخاب هوشمند سفر و تفریح | لست سکند، تور لحظه آخری',
       meta: [
         { name: 'theme-color', content: '#000000' },
         {
           name: 'description',
-          content: 'LastSecond',
+          content: 'لست سکند مرجعی برای مقایسه و انتخاب تور های مسافرتی, تور های لحظه آخری, نقد و بررسی هتل ها و آژانس های مسافرتی و سفرنامه های کاربران ایرانی',
         },
       ],
     },
