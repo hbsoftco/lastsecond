@@ -33,11 +33,18 @@
         <div class="flex">
           <HeadlessCombobox
             v-slot="{ open }"
-            v-model="selectedCity"
+            v-model="selectedItem"
             as="div"
             @update:model-value="query = ''"
           >
             <div class="relative mt-2">
+              <div
+                v-if="selectedItem"
+                class="absolute -top-5 right-2 bg-white rounded-t-xl px-3 py-1 border-t border-gray-blue-100/60 text-sm text-gray-blue-600"
+              >
+                {{ $t('common.departureCity') }}
+              </div>
+
               <HeadlessComboboxInput
                 class="w-full rounded-r-md max-w-44 border-0 bg-white py-2.5 pr-3 pl-12 text-gray-blue-900 shadow-sm sm:text-sm sm:leading-6"
                 :placeholder="$t('common.departureCity')"
@@ -46,7 +53,7 @@
                 @blur="query = ''"
               />
               <HeadlessComboboxButton
-                v-if="!selectedCity"
+                v-if="!selectedItem"
                 class="absolute inset-y-0 left-0 flex items-center rounded-r-md px-2 focus:outline-none"
               >
                 <Icon
@@ -64,7 +71,7 @@
                   name="material-symbols:close"
                   class="text-gray-400 group-hover:text-gray-blue-500"
                   size="16"
-                  @click="clear"
+                  @click="clear(0)"
                 />
               </div>
 
@@ -111,11 +118,18 @@
 
           <HeadlessCombobox
             v-slot="{ open }"
-            v-model="selectedCity"
+            v-model="selectedItem2"
             as="div"
             @update:model-value="query = ''"
           >
             <div class="relative mt-2">
+              <div
+                v-if="selectedItem2"
+                class="absolute -top-5 right-2 bg-white rounded-t-xl px-3 py-1 border-t border-gray-blue-100/60 text-sm text-gray-blue-600"
+              >
+                {{ $t('common.destinationCity') }}
+              </div>
+
               <HeadlessComboboxInput
                 class="w-full rounded-l-md max-w-44 border-0 bg-white py-2.5 pr-3 pl-12 text-gray-blue-900 shadow-sm sm:text-sm sm:leading-6"
                 :placeholder="$t('common.destinationCity')"
@@ -124,7 +138,7 @@
                 @blur="query = ''"
               />
               <HeadlessComboboxButton
-                v-if="!selectedCity"
+                v-if="!selectedItem2"
                 class="absolute inset-y-0 left-0 flex items-center rounded-r-md px-2 focus:outline-none"
               >
                 <Icon
@@ -142,7 +156,7 @@
                   name="material-symbols:close"
                   class="text-gray-400 group-hover:text-gray-blue-500"
                   size="16"
-                  @click="clear"
+                  @click="clear(2)"
                 />
               </div>
 
@@ -194,7 +208,7 @@
             class="w-full h-11 rounded-r-md max-w-36 cursor-pointer border-0 bg-white py-2 pr-3 pl-12 text-gray-blue-900 shadow-sm sm:text-sm sm:leading-6"
             :placeholder="$t('common.departureDate')"
             readonly
-            @click="open=true"
+            @click="openDialog=true"
           >
           <!-- departure date -->
 
@@ -202,7 +216,7 @@
             class="w-full h-11 rounded-l-md max-w-36 cursor-pointer border-0 bg-white py-2 pr-3 pl-12 text-gray-blue-900 shadow-sm sm:text-sm sm:leading-6"
             :placeholder="$t('common.returnDate')"
             readonly
-            @click="open=true"
+            @click="openDialog=true"
           >
           <!-- return date -->
         </div>
@@ -211,11 +225,18 @@
         <div>
           <HeadlessCombobox
             v-slot="{ open }"
-            v-model="selectedCity"
+            v-model="selectedItem3"
             as="div"
             @update:model-value="query = ''"
           >
             <div class="relative mt-2">
+              <div
+                v-if="selectedItem3"
+                class="absolute -top-5 right-2 bg-white rounded-t-xl px-3 py-1 border-t border-gray-blue-100/60 text-sm text-gray-blue-600"
+              >
+                {{ $t('common.stayDuration') }}
+              </div>
+
               <HeadlessComboboxInput
                 class="w-full rounded-md max-w-44 border-0 bg-white py-2.5 pr-3 pl-12 text-gray-blue-900 shadow-sm sm:text-sm sm:leading-6"
                 :placeholder="$t('common.stayDuration')"
@@ -224,7 +245,7 @@
                 @blur="query = ''"
               />
               <HeadlessComboboxButton
-                v-if="!selectedCity"
+                v-if="!selectedItem3"
                 class="absolute inset-y-0 left-0 flex items-center rounded-r-md px-2 focus:outline-none"
               >
                 <Icon
@@ -242,7 +263,7 @@
                   name="material-symbols:close"
                   class="text-gray-400 group-hover:text-gray-blue-500"
                   size="16"
-                  @click="clear"
+                  @click="clear(3)"
                 />
               </div>
 
@@ -291,11 +312,18 @@
         <div>
           <HeadlessCombobox
             v-slot="{ open }"
-            v-model="selectedCity"
+            v-model="selectedItem4"
             as="div"
             @update:model-value="query = ''"
           >
             <div class="relative mt-2">
+              <div
+                v-if="selectedItem4"
+                class="absolute -top-5 right-2 bg-white rounded-t-xl px-3 py-1 border-t border-gray-blue-100/60 text-sm text-gray-blue-600"
+              >
+                {{ $t('common.hotel') }}
+              </div>
+
               <HeadlessComboboxInput
                 class="w-full rounded-md max-w-56 border-0 bg-white py-2.5 pr-3 pl-12 text-gray-blue-900 shadow-sm sm:text-sm sm:leading-6"
                 :placeholder="$t('common.hotel')"
@@ -304,7 +332,7 @@
                 @blur="query = ''"
               />
               <HeadlessComboboxButton
-                v-if="!selectedCity"
+                v-if="!selectedItem4"
                 class="absolute inset-y-0 left-0 flex items-center rounded-r-md px-2 focus:outline-none"
               >
                 <Icon
@@ -322,7 +350,7 @@
                   name="material-symbols:close"
                   class="text-gray-400 group-hover:text-gray-blue-500"
                   size="16"
-                  @click="clear"
+                  @click="clear(4)"
                 />
               </div>
 
@@ -376,14 +404,15 @@
         </div>
       </div>
     </div>
+    <!-- tab contents -->
 
     <HeadlessTransitionRoot
       as="template"
-      :show="open"
+      :show="openDialog"
     >
       <HeadlessDialog
         class="relative z-10"
-        @close="open = false"
+        @close="openDialog = false"
       >
         <HeadlessTransitionChild
           as="template"
@@ -437,6 +466,7 @@
         </div>
       </HeadlessDialog>
     </HeadlessTransitionRoot>
+    <!-- calender dialog -->
   </div>
 </template>
 
@@ -460,7 +490,10 @@ interface City {
   count: string;
 }
 
-const selectedCity = ref<City | null>(null);
+const selectedItem = ref<City | null>(null);
+const selectedItem2 = ref<City | null>(null);
+const selectedItem3 = ref<City | null>(null);
+const selectedItem4 = ref<City | null>(null);
 const filteredCity = computed(() =>
   query.value === ''
     ? city
@@ -469,9 +502,20 @@ const filteredCity = computed(() =>
       }),
 );
 
-const clear = () => {
-  selectedCity.value = null;
+const clear = (item: number) => {
+  if (item === 0) {
+    selectedItem.value = null;
+  }
+  else if (item === 2) {
+    selectedItem2.value = null;
+  }
+  else if (item === 3) {
+    selectedItem3.value = null;
+  }
+  else if (item === 4) {
+    selectedItem4.value = null;
+  }
 };
 
-const open = ref(false);
+const openDialog = ref(false);
 </script>
