@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/icon',
     '@nuxtjs/i18n',
+    'vue3-carousel-nuxt',
   ],
 
   devtools: { enabled: true },
@@ -75,12 +76,12 @@ export default defineNuxtConfig({
   },
 
   icon: {
-    customCollections: [
-      {
-        prefix: 'local',
-        dir: '~/assets/icons',
-      },
-    ],
+    // customCollections: [
+    //   {
+    //     prefix: 'local',
+    //     dir: '~/assets/icons',
+    //   },
+    // ],
   },
 
   image: {
