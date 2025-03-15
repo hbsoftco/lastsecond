@@ -118,3 +118,17 @@ body {
 .link {
   @apply text-blue-accent-400 transition-all duration-200 hover:text-blue-accent-500;
 }
+
+/* carousel */
+.carousel__next, .carousel__prev {
+  @apply bg-white shadow text-gray-blue-900 w-10 h-10 rounded-xl border border-gray-50;
+}
+
+.carousel__next{
+  @apply -right-8;
+}
+
+.carousel__prev{
+  @apply -left-8;
+}
+/* carousel */

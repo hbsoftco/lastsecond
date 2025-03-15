@@ -25,7 +25,9 @@
   },
   "pages": {
     "home": {
-      "tourComparisonReference": "مرجع مقایسه و خرید تورهای مسافرتی خارجی و داخلی"
+      "tourComparisonReference": "مرجع مقایسه و خرید تورهای مسافرتی خارجی و داخلی",
+      "specialTours": "تورهای ویژه",
+      "popularDepartureTours": "تور از مبدا شهرهای پرطرفدار"
     }
   }
 }
