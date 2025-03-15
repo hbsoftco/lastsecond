@@ -19,7 +19,7 @@
               >
                 <NuxtLink
                   :to="link.to"
-                  class="text-gray-blue-400 text-sm duration-200 transition-all hover:text-gray-blue-300"
+                  class="text-gray-blue-300 text-sm duration-200 transition-all hover:text-gray-blue-200"
                 >
                   {{ link.title }}
                 </NuxtLink>
