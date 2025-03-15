@@ -1,9 +1,10 @@
 <template>
   <NuxtLink
+    dir="rtl"
     :to="link"
-    class="relative rounded-xl overflow-hidden max-h-80 max-w-72"
+    class="relative rounded-xl overflow-hidden max-h-80 max-w-72 text-right"
   >
-    <div class="max-w-72 h-44">
+    <div :class="['max-w-72 h-44', minWidth ? 'min-w-72' : '']">
       <NuxtImg
         provider="ipx"
         :src="src"
@@ -17,7 +18,7 @@
       />
     </div>
 
-    <div class="max-w-72 max-h-44">
+    <div :class="['max-w-72 max-h-44', minWidth ? 'min-w-72' : '']">
       <div class="relative mx-2 -top-8 bg-white rounded-xl px-4 py-3 shadow border-b border-gray-blue-300">
         <h5 class="font-bold mb-3 text-gray-blue-1000 text-base">{{ title }}</h5>
         <div
@@ -86,9 +87,11 @@ interface PropsDefinition {
   height?: number;
   width?: number;
   quality?: number;
+  minWidth?: boolean;
 }
 
 withDefaults(defineProps<PropsDefinition>(), {
   quality: 100,
+  minWidth: false,
 });
 </script>
