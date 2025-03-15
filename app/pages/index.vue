@@ -68,7 +68,7 @@
     </div>
     <!-- Popular departure city  -->
 
-    <div class="l-container pb-96">
+    <div class="l-container pb-24">
       <h2 class="text-2xl font-black mb-8">
         {{ $t('pages.home.specialTours') }}
       </h2>
@@ -105,6 +105,20 @@
       </div>
     </div>
     <!-- Special tours  -->
+
+    <div class="l-container pb-24">
+      <h2 class="text-2xl font-black mb-8">
+        {{ $t('pages.home.latestInternationalTours') }}
+      </h2>
+    </div>
+    <!-- latestInternationalTours -->
+
+    <div class="l-container pb-24">
+      <h2 class="text-2xl font-black mb-8">
+        {{ $t('pages.home.latestDomesticTours') }}
+      </h2>
+    </div>
+    <!-- latestDomesticTours -->
   </div>
 </template>
 

@@ -27,7 +27,11 @@
     "home": {
       "tourComparisonReference": "مرجع مقایسه و خرید تورهای مسافرتی خارجی و داخلی",
       "specialTours": "تورهای ویژه",
-      "popularDepartureTours": "تور از مبدا شهرهای پرطرفدار"
+      "popularDepartureTours": "تور از مبدا شهرهای پرطرفدار",
+      "latestInternationalTours": "جدیدترین تورهای خارجی",
+      "latestDomesticTours": "جدیدترین تورهای داخلی",
+      "travelMagazine": "مجله گردشگری",
+      "latestTravelogues": "جدیدترین سفرنامه‌ها"
     }
   }
 }
