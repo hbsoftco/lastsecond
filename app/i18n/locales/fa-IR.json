@@ -1,12 +1,31 @@
 {
   "common": {
     "priceStartsFrom": "شروع قیمت از",
-    "tour": "تور"
-
+    "tour": "تور",
+    "night": "شب",
+    "nowruz": "نوروز {year}",
+    "allTours": "همه تورها",
+    "searchDots": "جستجو ...",
+    "seeAllTours": "مشاهده همه تورها",
+    "lastsecond": "لست‌سکند",
+    "tours": "تورهای خارجی",
+    "trips": "تورهای داخلی",
+    "departureCity": "شهر مبدا",
+    "destinationCity": "شهر مقصد",
+    "departureDate": "تاریخ رفت",
+    "returnDate": "تاریخ برگشت",
+    "search": "جستجو",
+    "stayDuration": "مدت اقامت",
+    "hotel": "هتل"
   },
   "currencies": {
     "irr": "ریال",
     "irt": "تومان",
     "usd": "دلار"
+  },
+  "pages": {
+    "home": {
+      "tourComparisonReference": "مرجع مقایسه و خرید تورهای مسافرتی خارجی و داخلی"
+    }
   }
 }

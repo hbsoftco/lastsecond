@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "tailwind-scrollbar";
 
 @theme {
   --font-dana: "Dana";
@@ -108,4 +109,12 @@ body {
 
 * {
   @apply outline-0;
+}
+
+.active-bb {
+  @apply border-b-2 border-blue-accent-400 text-blue-accent-400;
+}
+
+.link {
+  @apply text-blue-accent-400 transition-all duration-200 hover:text-blue-accent-500;
 }

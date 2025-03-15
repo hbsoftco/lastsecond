@@ -74,6 +74,15 @@ export default defineNuxtConfig({
     vueI18n: '~/i18n/i18n.config.ts',
   },
 
+  icon: {
+    customCollections: [
+      {
+        prefix: 'local',
+        dir: '~/assets/icons',
+      },
+    ],
+  },
+
   image: {
     quality: 80,
     format: ['webp'],
