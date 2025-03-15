@@ -8,6 +8,7 @@
         :width="width"
         format="webp"
         class="relative rounded-full border-8 border-gray-blue-600"
+        :alt="alt"
       />
     </div>
   </div>
@@ -19,11 +20,13 @@ interface PropsDefinition {
   height?: number;
   width?: number;
   quality?: number;
+  alt?: string;
 }
 
 withDefaults(defineProps<PropsDefinition>(), {
   height: 280,
   width: 210,
   quality: 80,
+  alt: 'destination',
 });
 </script>

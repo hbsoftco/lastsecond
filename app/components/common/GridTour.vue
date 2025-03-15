@@ -15,6 +15,7 @@
         loading="lazy"
         :modifiers="{ w: width, h: height }"
         class="w-full h-full object-cover rounded-xl shadow"
+        :alt="imageAlt"
       />
     </div>
 
@@ -80,6 +81,7 @@ interface PropsDefinition {
   link: string;
   title: string;
   agency?: string;
+  imageAlt?: string;
   nightCount?: string;
   airline?: string;
   price?: string;
@@ -93,5 +95,6 @@ interface PropsDefinition {
 withDefaults(defineProps<PropsDefinition>(), {
   quality: 100,
   minWidth: false,
+  imageAlt: 'tour',
 });
 </script>

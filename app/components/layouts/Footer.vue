@@ -39,6 +39,7 @@
                   format="webp"
                   loading="lazy"
                   :modifiers="{ w: 140, h: 32 }"
+                  alt="logo"
                 />
               </div>
               <div class="pb-6">
@@ -60,6 +61,7 @@
                     loading="lazy"
                     :modifiers="{ w: 90, h: 90 }"
                     class="rounded"
+                    alt="ecunion"
                   />
                 </NuxtLink>
                 <NuxtLink to="/">
@@ -73,6 +75,7 @@
                     loading="lazy"
                     :modifiers="{ w: 90, h: 90 }"
                     class="rounded"
+                    alt="enamad"
                   />
                 </NuxtLink>
                 <NuxtLink to="/">
@@ -86,6 +89,7 @@
                     loading="lazy"
                     :modifiers="{ w: 90, h: 90 }"
                     class="rounded"
+                    alt="gardeshgari"
                   />
                 </NuxtLink>
                 <NuxtLink to="/">
@@ -99,6 +103,7 @@
                     loading="lazy"
                     :modifiers="{ w: 90, h: 90 }"
                     class="rounded"
+                    alt="samandehi"
                   />
                 </NuxtLink>
               </div>

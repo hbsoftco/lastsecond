@@ -8,6 +8,7 @@
               src="img/logo.png"
               quality="80"
               height="42"
+              alt="logo"
             />
           </NuxtLink>
         </div>
