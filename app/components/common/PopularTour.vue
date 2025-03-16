@@ -1,7 +1,8 @@
 <template>
   <NuxtLink
+    dir="rtl"
     :to="link"
-    class="relative rounded-xl w-60 h-60 shadow"
+    class="relative rounded-xl w-60 h-60 shadow text-right"
   >
     <div class="w-60 h-60">
       <NuxtImg
